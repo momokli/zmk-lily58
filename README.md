@@ -1,10 +1,10 @@
 # Lily58 QWERTZ Gaming Layout 🎮
 
-Für meinen Bruder. Linke Hälfte, QWERTZ, gaming — mehr braucht's nicht.
+QWERTZ-Layout für die **linke Hälfte** der splitkb Aurora Lily58. Fokus auf Gaming, die rechte Seite wird (noch) nicht gebraucht.
 
-## Das Layout
+## Layout
 
-### Normal (Default) — Tippen & Chatten
+### Default — Tippen
 
 ```
 ┌──────┬─────┬─────┬─────┬─────┬─────┬──────┐
@@ -17,13 +17,13 @@ Für meinen Bruder. Linke Hälfte, QWERTZ, gaming — mehr braucht's nicht.
 │SHIFT │  Y  │  X  │  C  │  V  │  B  │  `   │
 └──────┴─────┴─────┴─────┴─────┴─────┴──────┘
           ┌──────┬──────┬──────┬──────┐
-          │ ALT  │FUNK1 │LEERTAST│FUNK2│
+          │ ALT  │FUNK1 │SPACE │FUNK2│
           └──────┴──────┴──────┴──────┘
 ```
 
-Das ist ein ganz normaler QWERTZ-Linksteil. WASD und alle wichtigen Tasten sind da, wo du sie kennst. Die Daumen bedienen ALT, LEERTASTE und die zwei Funktionstasten.
+Standard QWERTZ-Linksteil. WASD, STRG, Shift, Leertaste — alles an gewohnter Position.
 
-### Funktion 1 (FUNK1 gedrückt halten) — F-Tasten & Media
+### FUNK1 (halten) — F-Tasten & Media
 
 ```
 ┌──────┬─────┬─────┬─────┬─────┬─────┬──────┐
@@ -31,15 +31,15 @@ Das ist ein ganz normaler QWERTZ-Linksteil. WASD und alle wichtigen Tasten sind 
 ├──────┼─────┼─────┼─────┼─────┼─────┤      │
 │  F7  │ F8  │ F9  │ F10 │ F11 │ F12 │      │
 ├──────┼─────┼─────┼─────┼─────┼─────┤      │
-│ LEISER│LAUTER│STUMM│PLAY │VORHER│NÄCHSTER│
+│ LEISER│LAUTER│STUMM│PLAY │VOR  │NÄCHST│    │
 ├──────┼─────┼─────┼─────┼─────┼─────┼──────┤
-│ ▶ Alles durchgereicht — Y, X, C, V, B usw. │
+│ untere Reihe + Daumen arbeiten normal weiter │
 └──────┴─────┴─────┴─────┴─────┴─────┴──────┘
 ```
 
-Ideal zum Zocken: F1-F12 für Ingame-Menüs, Lautstärke und Media-Tasten für Discord/Musik. Die untere Reihe und Daumen arbeiten normal weiter.
+F1-F12 für Ingame-Menüs, Media-Tasten für Discord/Spotify. Die untere Reihe (Y, X, C, V, B) bleibt unverändert.
 
-### Funktion 2 (FUNK2 gedrückt halten) — Z, Pfeiltasten & Sonderzeichen
+### FUNK2 (halten) — Z, Pfeiltasten, Sonderzeichen
 
 ```
 ┌──────┬─────┬─────┬─────┬─────┬─────┬──────┐
@@ -53,35 +53,30 @@ Ideal zum Zocken: F1-F12 für Ingame-Menüs, Lautstärke und Media-Tasten für D
 └──────┴─────┴─────┴─────┴─────┴─────┴──────┘
 ```
 
-- **Z** — zum Hinlegen/Kriechen (in QWERTZ ist Z auf der rechten Seite, hier haste sie trotzdem)
-- **Pfeiltasten** — navigieren ohne rechte Hand
+- **Z** — in QWERTZ normal auf der rechten Seite, hier trotzdem erreichbar
+- **Pfeiltasten** — Navigation ohne rechte Hand
 - **Sonderzeichen** — [], =, \, -
-- **WIN-Taste** — für Gamebar (Win+G) usw.
+- **WIN-Taste** — für Gamebar (Win+G) etc.
+- Die Daumentasten arbeiten normal weiter
 
-## Wie benutzen?
+## Benutzung
 
-1. **Linke Seite** anschließen, die rechte wird erstmal nicht gebraucht
-2. Beim ersten Mal per USB anschließen, dann verbindet er sich automatisch
-3. **FUNK1** = die zweite Taste von links unten (gedrückt halten = F-Tasten/Layer)
-4. **FUNK2** = die vierte Taste von links unten (gedrückt halten = Z/Pfeile/Layer)
-5. Loslegen — die wichtigsten Tasten sind genau wie auf ner normalen Tastatur
+1. **Nur die linke Hälfte** anschließen (per USB)
+2. FUNK1 = zweite Taste von links unten (gedrückt halten aktiviert Layer 1)
+3. FUNK2 = vierte Taste von links unten (gedrückt halten aktiviert Layer 2)
+4. OS-Tastaturlayout auf **Deutsch (QWERTZ)** stellen
 
 ## QWERTZ-Hinweis
 
-Die Tastatur sendet die Tasten auf Englisch (HID-Codes). Dein Betriebssystem muss auf **Deutsch (QWERTZ)** eingestellt sein, dann kommen die richtigen Buchstaben an. Besonders bei Y und Z: auf der Tastatur ist das Y physikalisch da wo früher Z war — das gehört so.
+Die Tastatur sendet HID-Scancodes. Das Betriebssystem muss auf Deutsch (QWERTZ) eingestellt sein, damit die richtigen Buchstaben ankommen. Der Y/Z-Tausch ist korrekt abgebildet.
 
-## Bauen & Flashen
+## Build
 
 ```bash
-# Firmware bauen (GitHub Actions macht das automatisch)
-# Oder lokal:
+# GitHub Actions baut automatisch bei jedem Push
+# Manuell:
 west build -d build/left -b nice_nano_v2 -- -DSHIELD=splitkb_aurora_lily58_left
-# Flashen:
 west flash -d build/left
 ```
 
-Die fertige Firmware liegt nach dem Build in GitHub Actions als Download bereit.
-
----
-
-Viel Spaß beim Zocken! Bei Fragen oder Änderungswünschen einfach Bescheid sagen.
+Die fertige Firmware (.uf2) liegt in den GitHub Actions Artefakten.
