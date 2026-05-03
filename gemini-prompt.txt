@@ -1,0 +1,42 @@
+Create 3 keyboard layout preview images for the left half of a splitkb Aurora Lily58 (column-staggered split keyboard, 29 keys per side: 4 rows + thumb row).
+
+Style: clean, minimal, dark theme (keycaps dark gray, legends white/light gray, thumb keys slightly different shade). Show only the left half. Like a 3D render or high-quality product shot of actual keycaps on a keyboard.
+
+Each image should show the SAME keyboard but with different key labels for each layer. Label each image clearly with the layer name.
+
+---
+
+**Layer 1: Default (QWERTZ)**
+
+Keyboard layout (left half only, pinky to index finger):
+- Row 1 (top): ESC, 1, 2, 3, 4, 5
+- Row 2: TAB, Q, W, E, R, T
+- Row 3: CTRL, A, S, D, F, G
+- Row 4: SHIFT, Y, X, C, V, B, ` (grave/tilde)
+- Thumb row: ALT, LOWER, SPACE, RAISE
+
+The LOWER and RAISE thumb keys should look like layer/momentary keys (maybe slightly different color).
+
+---
+
+**Layer 2: Lower (gaming functions — hold LOWER)**
+
+- Row 1: F1, F2, F3, F4, F5, F6
+- Row 2: F7, F8, F9, F10, F11, F12
+- Row 3: VOL-, VOL+, MUTE, PLAY, PREV, NEXT
+- Row 4: all transparent (keeps default labels — Y, X, C, V, B, `)
+- Thumbs: all transparent (keeps default labels)
+
+Show LOWER key as pressed/active (maybe brighter or highlighted).
+
+---
+
+**Layer 3: Raise (gaming extras — hold RAISE)**
+
+- Row 1: ` (grave), 1, 2, 3, 4, 5
+- Row 2: ESC, Z, W, E, R, T
+- Row 3: ← (left), ↓ (down), ↑ (up), → (right), HOME, END
+- Row 4: WIN, CAPS, -, =, [, ], \ (backslash)
+- Thumbs: all transparent (keeps default labels)
+
+Show RAISE key as pressed/active.
